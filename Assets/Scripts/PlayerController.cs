@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    private Rigidbody2D rb;
+    public float moveSpeed = 100;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
+        rb= GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
